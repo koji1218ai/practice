@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(184, 179, 179);
+    text-align: center;
+    padding: 10px;
+}
+header p {
+    font-size: 10px;
+}
+section {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.box {
+    background-color: rgb(206, 200, 200);
+    width: 15%;
+    height: 65%;
+    margin-top: 30px;
+}
+.box img {
+    width: 90%;
+    height: 75%;
+    margin: 8px 0px 0px 10px;
+} 
+.box p {
+    margin-top: 0px;
+    text-align: center;
+}
+main {
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+    /* flexここには置かない */
+    
+}
+.footer {
+    height: 200px;
+    width: 100%; 
+    background-color: rgb(218, 211, 211);  
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row-reverseここにこれを置いても、どこを反転にするか分からないため、全てが反転されてしまうので、; */
+    margin: 20px 10px 20px 10px;
+}
+
+/* ここに置く！！どこかを指定する！！ */
+.footer:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.left {
+    /* ％にするとjustufyが効かないし、幅も広がらない */
+    width: 50%;
+    /* width: 600px; */
+    height: 180px;
+}
+.right {
+    width: 40%;
+    /* width: 400px; */
+    height: 180px;
+    margin: 10px 10px 10px 0px;
+}
+/* rightのimgはimgだけのこと！！ */
+.right img {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    margin: 0px;
+    font-size: 20px;
+}
+.left p {
+    margin: 0px;
+    font-size: 10px;
+}
